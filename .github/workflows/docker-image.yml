@@ -22,5 +22,5 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: |
-          ghcr.io/jrbe228/actions-runner-compose:$(date +%s)
+          ghcr.io/jrbe228/actions-runner-compose:${{ github.run_number }}
           ghcr.io/jrbe228/actions-runner-compose:latest
