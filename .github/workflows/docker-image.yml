@@ -6,7 +6,9 @@ on:
   pull_request:
     branches: [ "main" ]
   workflow_dispatch:
-
+  schedule:
+    - cron: '0 0 * * 1' # This will trigger the workflow every Monday at 00:00 UTC
+    
 jobs:
 
   build:
